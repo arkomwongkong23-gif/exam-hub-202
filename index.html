@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f7fb" />
+  <title>เตรียมสอบครูผู้ช่วยอาชีวะ วิชาเอก 202 : ช่างกลโรงงานและเทคนิคการผลิต</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="loginView" class="login-shell">
+    <section class="login-card">
+      <img class="login-logo" src="logo-together-archeeewa.png" alt="Together Archeeewa">
+      <p class="eyebrow">MANUFACTURING EXAM HUB</p>
+      <h1>เตรียมสอบครูผู้ช่วยอาชีวะ<br>วิชาเอก 202 : ช่างกลโรงงานและเทคนิคการผลิต</h1>
+      <p class="muted">ระบบแนวข้อสอบวิชาช่างกลโรงงานและเทคนิคการผลิต</p>
+      <form id="loginForm" class="login-form">
+        <label for="passwordInput">รหัสผ่านเข้าใช้งาน</label>
+        <div class="password-wrap"><input id="passwordInput" type="password" placeholder="กรอกรหัสผ่าน" required autocomplete="current-password"><button type="button" id="togglePassword" aria-label="แสดงรหัสผ่าน">แสดง</button></div>
+        <label for="userNameInput">ชื่อผู้เข้าสอบ <span class="optional-label">ไม่บังคับ · ใช้แยกสถิติผู้ใช้งาน</span></label>
+        <input id="userNameInput" type="text" maxlength="50" placeholder="กรอกชื่อหรือชื่อเล่นเพื่อบันทึกสถิติ" autocomplete="name">
+        <button class="button primary full" type="submit">เข้าสู่ระบบ <span>→</span></button>
+        <p id="loginError" class="error" role="alert"></p>
+      </form>
+      <div class="login-foot"><span class="status-dot"></span> พื้นที่เรียนรู้สำหรับผู้มีรหัสผ่าน</div>
+    </section>
+  </div>
+
+  <div id="appView" class="app-shell hidden">
+    <aside class="sidebar">
+      <a class="brand" href="#"><img class="sidebar-logo" src="logo-together-archeeewa.png" alt=""><span><b>เตรียมสอบครูผู้ช่วยอาชีวะ</b><small>วิชาเอก 202 : ช่างกลโรงงานและเทคนิคการผลิต</small></span></a>
+      <div class="side-label">เมนูหลัก</div>
+      <button class="nav-item active" data-page="home"><span>⌂</span> ภาพรวม</button>
+      <button class="nav-item" data-page="library"><span>▤</span> คลังข้อสอบ</button>
+      <button class="nav-item" data-page="pdfs"><span>▧</span> คลัง PDF</button>
+      <button class="nav-item" data-page="manage"><span>＋</span> จัดการข้อสอบ</button>
+      <button class="nav-item" data-page="stats"><span>▥</span> สถิติผู้ใช้งาน</button>
+      <div class="sidebar-bottom"><div class="side-label">บัญชีผู้ใช้</div><button id="settingsBtn" class="nav-item"><span>⚙</span> ตั้งค่ารหัสผ่าน</button><button id="logoutBtn" class="nav-item"><span>↪</span> ออกจากระบบ</button><div class="sidebar-note">ข้อมูลถูกเก็บไว้ในเบราว์เซอร์เครื่องนี้</div></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><div class="top-heading"><span class="top-brand-title">เตรียมสอบครูผู้ช่วยอาชีวะ วิชาเอก 202 : ช่างกลโรงงานและเทคนิคการผลิต</span><span class="crumb-sep">/</span><strong id="pageTitle">ภาพรวม</strong></div><div class="top-actions"><span class="today" id="todayText"></span><span class="profile-name" id="adminNameDisplay">ผู้ดูแลระบบ</span><div class="avatar" id="adminAvatar">ผ</div></div></header>
+      <section id="homePage" class="page">
+        <div class="welcome-row"><div><p class="eyebrow">ยินดีต้อนรับ</p><h1>พร้อมเริ่มทบทวนหรือยัง?</h1><p class="muted">เลือกชุดข้อสอบที่ต้องการ หรือจัดการคลังข้อสอบของคุณ</p></div><button class="button primary" data-goto="manage">＋ เพิ่มข้อสอบ</button></div>
+        <div class="stats-grid"><article class="stat-card"><div class="stat-icon lilac">▤</div><div><span>ชุดข้อสอบทั้งหมด</span><strong id="statSets">0</strong></div><small>ชุดในคลัง</small></article><article class="stat-card"><div class="stat-icon mint">✓</div><div><span>จำนวนข้อทั้งหมด</span><strong id="statQuestions">0</strong></div><small>ข้อในระบบ</small></article><article class="stat-card"><div class="stat-icon peach">◷</div><div><span>เวลาทำข้อสอบ</span><strong>ยืดหยุ่น</strong></div><small>เลือกได้ตามต้องการ</small></article></div>
+        <div class="section-heading"><div><h2>ชุดข้อสอบ</h2><p class="muted">เลือกชุดที่ต้องการฝึกทำ</p></div><button class="text-button" data-goto="library">ดูทั้งหมด →</button></div>
+        <div id="homeSetGrid" class="set-grid"></div>
+        <div class="tip-banner"><span class="tip-icon">✦</span><div><b>เพิ่มคลังความรู้ได้ไม่จำกัด</b><p>เพิ่มข้อสอบทีละข้อ หรือนำเข้าชุดข้อสอบจากไฟล์ JSON ได้ที่เมนูจัดการข้อสอบ</p></div><button class="text-button" data-goto="manage">เริ่มเพิ่มข้อสอบ →</button></div>
+      </section>
+      <section id="libraryPage" class="page hidden"><div class="welcome-row"><div><p class="eyebrow">ฝึกฝนและทบทวน</p><h1>คลังข้อสอบ</h1><p class="muted">เลือกชุดข้อสอบเพื่อเริ่มทำแบบทดสอบ</p></div><div class="search-box">⌕ <input id="searchInput" placeholder="ค้นหาชุดข้อสอบ..."></div></div><div id="librarySetGrid" class="set-grid"></div></section>
+      <section id="pdfsPage" class="page hidden"><div class="welcome-row"><div><p class="eyebrow">อ่านเอกสารต้นฉบับ</p><h1>คลัง PDF</h1><p class="muted">นำเข้าและเปิดอ่านไฟล์ PDF ได้โดยตรง ไม่ต้องแปลงเป็นตัวเลือกข้อสอบ</p></div></div><div class="panel pdf-library-panel"><div class="panel-heading"><div><h2>เพิ่มเอกสาร PDF</h2><p class="muted">เลือกได้หลายไฟล์ ระบบเก็บเอกสารไว้ในเบราว์เซอร์เครื่องนี้</p></div><span class="import-icon">⇧</span></div><div class="pdf-library-upload"><input type="file" id="pdfLibraryInput" accept="application/pdf,.pdf" multiple hidden><button class="button primary" id="pdfLibraryChoose">＋ เลือกไฟล์ PDF</button><span id="pdfLibraryStatus" class="muted">รองรับไฟล์ PDF</span></div><p class="helper">ไฟล์ในคลังนี้เปิดอ่านได้จากเมนูคลัง PDF และจะแยกจากคลังข้อสอบแบบ ก. ข. ค. ง.</p></div><div class="section-heading pdf-library-heading"><div><h2>เอกสารของฉัน</h2><p id="pdfLibraryCount" class="muted">กำลังโหลดรายการไฟล์…</p></div><input id="pdfSearchInput" class="pdf-search" placeholder="ค้นหาไฟล์ PDF..."></div><div id="pdfLibraryList" class="pdf-library-list"></div></section>
+      <section id="statsPage" class="page hidden"><div class="welcome-row"><div><p class="eyebrow">ภาพรวมการเรียนรู้</p><h1>สถิติผู้ใช้งาน</h1><p class="muted">จำนวนการเข้าใช้ ผลสอบ และคะแนนสูงสุดแยกตามชุดข้อสอบ</p></div><button class="button secondary" id="refreshStatsBtn">↻ อัปเดตสถิติ</button></div><div class="stats-grid stats-grid-wide"><article class="stat-card"><div class="stat-icon mint">◉</div><div><span>ผู้เข้าสอบ</span><strong id="statUsers">0</strong></div><small>บัญชีในเบราว์เซอร์นี้</small></article><article class="stat-card"><div class="stat-icon lilac">↗</div><div><span>การเข้าใช้งาน</span><strong id="statVisits">0</strong></div><small>ครั้ง</small></article><article class="stat-card"><div class="stat-icon peach">✓</div><div><span>ผลสอบที่บันทึก</span><strong id="statAttempts">0</strong></div><small>ครั้ง</small></article></div><div class="stats-panels"><section class="panel"><div class="panel-heading"><div><h2>คะแนนสูงสุดแยกตามชุดสอบ</h2><p class="muted">แสดงคะแนนสูงสุดของผู้เข้าสอบแต่ละชุด</p></div></div><div id="topicBestScores" class="stats-table-wrap"></div></section><section class="panel"><div class="panel-heading"><div><h2>สถิติผู้เข้าสอบ</h2><p class="muted">จำนวนการเข้าใช้และการทำข้อสอบของแต่ละชื่อ</p></div></div><div id="userUsageStats" class="stats-table-wrap"></div></section></div><p class="stats-local-note">สถิตินี้รวบรวมจากเบราว์เซอร์และเครื่องที่เปิดระบบนี้เท่านั้น หากต้องการสถิติรวมจากหลายเครื่องหรือใช้งานออนไลน์ร่วมกัน ต้องเชื่อมต่อฐานข้อมูลส่วนกลาง</p></section>
+      <section id="managePage" class="page hidden"><div class="welcome-row"><div><p class="eyebrow">จัดการเนื้อหา</p><h1>จัดการข้อสอบ</h1><p class="muted">สร้างชุดข้อสอบ เพิ่มคำถาม หรือนำเข้าข้อมูล</p></div></div>
+        <div class="manage-layout"><div class="panel"><div class="panel-heading"><div><h2>สร้างชุดข้อสอบ</h2><p class="muted">เริ่มต้นด้วยชื่อและรายละเอียดชุดข้อสอบ</p></div></div><form id="setForm" class="form-grid"><label class="field full-field">ชื่อชุดข้อสอบ<input id="setTitle" placeholder="เช่น พื้นฐานงานกลึง" required maxlength="80"></label><label class="field full-field">รายละเอียด<textarea id="setDescription" rows="2" placeholder="คำอธิบายสั้นๆ"></textarea></label><button class="button primary" type="submit">＋ สร้างชุดข้อสอบ</button></form></div>
+        <div class="panel"><div class="panel-heading"><div><h2>นำเข้า / สำรองข้อมูล</h2><p class="muted">นำเข้าชุดข้อสอบจาก JSON หรือแปลง PDF เป็น JSON</p></div><span class="import-icon">⇧</span></div><div class="import-box"><input type="file" id="importFile" accept=".json,application/json" hidden><button class="button secondary" id="importBtn">เลือกไฟล์ JSON</button><span id="importName" class="muted">ยังไม่ได้เลือกไฟล์</span></div><div class="pdf-import-box"><input type="file" id="pdfFile" accept="application/pdf,.pdf" hidden><button class="button primary" id="pdfImportBtn">⇧ เลือก PDF เพื่อแปลงเป็น JSON</button><span class="helper">รองรับ PDF ที่เลือกข้อความได้ ระบบจะแยกโจทย์ ตัวเลือก 4 ข้อ และเฉลยให้ตรวจทานก่อนนำเข้า</span></div><button class="text-button" id="exportAllBtn">↓ ส่งออกคลังข้อสอบทั้งหมด</button></div></div>
+        <div class="section-heading"><div><h2>ชุดข้อสอบในระบบ</h2><p class="muted">เลือกชุดเพื่อเพิ่มและแก้ไขคำถาม</p></div></div><div id="manageSetList" class="manage-list"></div>
+      </section>
+      <section id="quizPage" class="page hidden"></section>
+      <section id="resultPage" class="page hidden"></section>
+    </main>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>

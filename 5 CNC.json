@@ -1,0 +1,757 @@
+{
+  "version": 1,
+  "sets": [
+    {
+      "title": "CNC",
+      "description": "62 ข้อ · แปลงจาก PDF พร้อมเฉลย",
+      "questions": [
+        {
+          "number": 1,
+          "text": "งาน CNC พัฒนาขึ้นมาจากระบบใด",
+          "options": [
+            "NC",
+            "CAD",
+            "DNC",
+            "CAM"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 2,
+          "text": "“CNC” ย่อมาจาก",
+          "options": [
+            "COMPUTER NUMBERICAL COMTROL",
+            "COMPUTER NUMERICAL CONTROL",
+            "COMPUTER NUMPERICAL CONTROL",
+            "COMPUTER NUMERICAL COUNTER"
+          ],
+          "answer": 1,
+          "explanation": ""
+        },
+        {
+          "number": 3,
+          "text": "หน้าที่ของ Controller ในเครื่อง CNC",
+          "options": [
+            "จับยึดชิ้นงาน",
+            "เก็บโปรแกรมและควบคุมการทำงาน",
+            "จับยึดมีด",
+            "ขับเคลื่อนมีด"
+          ],
+          "answer": 1,
+          "explanation": ""
+        },
+        {
+          "number": 4,
+          "text": "เครื่องกัด CNC ทั่วไป แบ่งออกเป็นชนิดใดบ้าง",
+          "options": [
+            "เครื่องกัด CNC 2 แกน และ 3 แกน",
+            "เครื่องกัด CNC ขนาดเล็ก",
+            "เครื่องกัด CNC เพลาตั้งและเพลานอน",
+            "เครื่องกัด CNC ธรรมดาและอัตโนมัติ"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 5,
+          "text": "เครื่องกลึง CNC ทำงานในแกนใด",
+          "options": [
+            "X และ Z",
+            "Y และ Z",
+            "X และ Y",
+            "R และ A"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 6,
+          "text": "ระบบ “โคออร์ดิเนต” หมายถงึ",
+          "options": [
+            "ตำแหน่งของชิ้นงานบนเครื่องจักรกลซีเอ็นซี",
+            "ตำแหน่งจุดศูนย์ของเครื่องจักรกลซีเอ็นซี",
+            "ตำแหน่งจุดศูนย์ของชิ้นงาน",
+            "ตำแหน่งการเคลื่อนที่ของเครื่องมือตัด"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 7,
+          "text": "โคออร์ดิเนตอ้างอิงหรือจุดอ้างอิง มที ั้งหมดกี่จุด",
+          "options": [
+            "1 จุด",
+            "3 จุด",
+            "2 จุด",
+            "4 จุด"
+          ],
+          "answer": 3,
+          "explanation": ""
+        },
+        {
+          "number": 8,
+          "text": "โปรแกรมมาตรฐาน ISO ขึ้นต้นด้วยส่วนหัวและส่วนท้ายโปรแกรม ด้วยเครื่องหมายใด",
+          "options": [
+            "%",
+            "!",
+            "#",
+            "*"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 9,
+          "text": "จุดอ้างอิงของชิ้นงาน (Work Reference Point) หมายถึง",
+          "options": [
+            "จุดอ้างอิงที่บริษัทผู้ผลิตเป็นผู้กำหนดไม่สามารถเปลี่ยนได้",
+            "จุดอ้างอิงที่ใช้เริ่มต้นในการกำหนดระบบโคออร์ดิเนตของชิ้นงาน",
+            "จุดอ้างอิงที่ใช้ในการเริ่มต้นของการเขียนโปรแกรม",
+            "จุดอ้างอิงที่ใช้ในการเลื่อนกลับของเครื่องมือตัดบนเครื่องจักรกลซีเอ็นซี *NOTE* ระบบโคออร์ดิเนตของเครื่องจักรกลซีเอ็นซีมี 2 ระบบ คือ ระบบตำแหน่งของเครื่องจักรกลซเีอ็นซีมี 2 แบบ คือ"
+          ],
+          "answer": 1,
+          "explanation": ""
+        },
+        {
+          "number": 10,
+          "text": "คำว่า “บล็อก” (Block) ในการเขียนโปรแกรมเอ็นซี หมายถึง",
+          "options": [
+            "ตัวอักษรเพียงอย่างเดียวรวมกันเป็นบรรทัดหรือบล็อก",
+            "กล่องเก็บของที่ใช้ในการเขียนโปรแกรมเอ็นซี",
+            "กล่องใส่เครื่องมือในการเขียนโปรแกรมเอ็นซี",
+            "ประกอบด้วยคำหลายคำรวมกันเป็นบรรทัดหรือบล็อก *NOTE* *ที่มา Copyright @ Siemens AG 2012."
+          ],
+          "answer": 3,
+          "explanation": ""
+        },
+        {
+          "number": 11,
+          "text": "องค์ประกอบของโปรแกรมเอ็นซีมีอะไรบ้าง",
+          "options": [
+            "เครื่องจักรและเงื่อนไขเสริม",
+            "คำสั่งและเงื่อนไขเสริม",
+            "เงื่อนไขเสริมและโปรแกรมย่อย",
+            "คำสั่งและเครื่องจักร"
+          ],
+          "answer": 1,
+          "explanation": ""
+        },
+        {
+          "number": 12,
+          "text": "ข้อใดคือเงื่อนไขเสริมในการเขียนโปรแกรมเอ็นซี",
+          "options": [
+            "Feed",
+            "G–Code",
+            "Num Block",
+            "M–Code"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 13,
+          "text": "คำว่า “Feed” หมายถึง",
+          "options": [
+            "อัตราป้อน",
+            "โคออร์ดิเนต",
+            "การเคลื่อนที่เร็ว",
+            "ความเร็วรอบ"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 14,
+          "text": "คำว่า “Speed” หมายถึง",
+          "options": [
+            "อัตราป้อน",
+            "โคออร์ดิเนต",
+            "การเคลื่อนที่เร็ว",
+            "ความเร็วรอบ"
+          ],
+          "answer": 3,
+          "explanation": ""
+        },
+        {
+          "number": 15,
+          "text": "คำว่า “X30, Y40” หมายถึง",
+          "options": [
+            "อัตราป้อน",
+            "โคออร์ดิเนต",
+            "การเคลื่อนที่เร็ว",
+            "ความเร็วรอบ"
+          ],
+          "answer": 1,
+          "explanation": ""
+        },
+        {
+          "number": 16,
+          "text": "G01 หมายถึง",
+          "options": [
+            "การเคลื่อนที่เส้นโค้งตามเข็มนาฬิกา",
+            "การเคลื่อนที่เร็ว",
+            "การเคลื่อนที่เส้นโค้งทวนเข็มนาฬิกา",
+            "การเคลื่อนที่แนวเส้นตรงตามค่าอัตราป้อน"
+          ],
+          "answer": 3,
+          "explanation": ""
+        },
+        {
+          "number": 17,
+          "text": "G02 หมายถึง",
+          "options": [
+            "การเคลื่อนที่เส้นโค้งตามเข็มนาฬิกา",
+            "การเคลื่อนที่เร็ว",
+            "การเคลื่อนที่เส้นโค้งทวนเข็มนาฬิกา",
+            "การเคลื่อนที่แนวเส้นตรงตามค่าอัตราป้อน"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 18,
+          "text": "G03 หมายถึง",
+          "options": [
+            "การเคลื่อนที่เส้นโค้งตามเข็มนาฬิกา",
+            "การเคลื่อนที่เร็ว",
+            "การเคลื่อนที่เส้นโค้งทวนเข็มนาฬิกา",
+            "การเคลื่อนที่แนวเส้นตรงตามค่าอัตราป้อน *NOTE* *ที่มา Copyright @ Siemens AG 2012."
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 19,
+          "text": "ข้อใดเป็นการกลับตำแหน่งอ้างอิงของเครื่อง",
+          "options": [
+            "MODE MANUAL หรือ HAND",
+            "MODE MDI หรือ MDA",
+            "MODE AUTO",
+            "MODE HOME หรือ REFERENCE"
+          ],
+          "answer": 3,
+          "explanation": ""
+        },
+        {
+          "number": 20,
+          "text": "ข้อใดเป็นคำสั่งในการเปิด SPINDLE ทิศทาง CW",
+          "options": [
+            "M01",
+            "M03",
+            "M02",
+            "M04"
+          ],
+          "answer": 1,
+          "explanation": ""
+        },
+        {
+          "number": 21,
+          "text": "ข้อใดเป็นคำสั่งในการเปิดน้ำหล่อเย็น",
+          "options": [
+            "M06",
+            "M08",
+            "M07",
+            "M09"
+          ],
+          "answer": 1,
+          "explanation": ""
+        },
+        {
+          "number": 22,
+          "text": "ข้อใดคือการกำหนดตำแหน่งศูนย์งาน",
+          "options": [
+            "G52",
+            "G50",
+            "G54",
+            "G01"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 23,
+          "text": "ข้อใดควรจะอยู่ที่บรรทัดสุดท้ายของโปรแกรม",
+          "options": [
+            "G54 X0.20",
+            "G80, G21,G40",
+            "G90, G54",
+            "M02 หรือ M30"
+          ],
+          "answer": 3,
+          "explanation": ""
+        },
+        {
+          "number": 24,
+          "text": "เครื่องกลึง ชนิดป้อมมีดอยู่ด้านหลัง จับมีดหันคมมีดลงล่างจะใช้ค่า OFF SET รัศมีมีดแบบใด",
+          "options": [
+            "G40",
+            "G42",
+            "G41",
+            "G43"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 25,
+          "text": "การเลือกมีดให้เหมาะกับงาน ต้องคำนึงข้อใด",
+          "options": [
+            "ขนาดของงาน",
+            "วัสดุมีด",
+            "รูปทรงของงาน",
+            "วัสดุงาน"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 26,
+          "text": "ระบบเปลี่ยนเครื่องมือตัดของเครื่องกัดมีอยู่ 2 วิธี คือ",
+          "options": [
+            "Absolute, Chain",
+            "Absolute, Carousel",
+            "Carousel, Chain",
+            "Chang, Chain"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 27,
+          "text": "การเลือก Insert ชนิดถอดเปลี่ยนได้ของเครื่องกลึงมีข้อพิจารณา คือข้อใด",
+          "options": [
+            "วัสดุที่ต้องการให้ Insert ตดั เฉือน",
+            "วัสดุที่ใช้ทำInsert",
+            "รูปทรงและการคายเศษของInsert",
+            "ถูกทุกข้อ"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 28,
+          "text": "มีดที่ใช้กับเครื่องกลึง CNC ควรเป็นรูปแบบใด",
+          "options": [
+            "มีดเล็บชนิดเชื่อม",
+            "มีด High Speed",
+            "มีดเล็บ ชนิดถอดเปลี่ยนได้",
+            "มีด Carbon Steel"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 29,
+          "text": "การเลือก Insert ชนิดถอดเปลี่ยนได้ของเครื่องกลึง ต้องพิจารณาตามข้อใด",
+          "options": [
+            "วัสดุที่ต้องการให้อินเสิร์ทตัดเฉือน",
+            "วัสดุที่ใช้ทำอินเสิร์ท",
+            "รูปทรงและการคายเศษของอินเสิร์ท",
+            "ถูกทุกข้อ"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 30,
+          "text": "ค่าเผื่อรัศมีมนปลายมีด (Tool Nose Radial) สอดคล้องกับข้อใด",
+          "options": [
+            "ในคำสั่งมี G41 หรือ G42",
+            "ในคำสั่งมี G81 หรือ G82",
+            "ในคำสั่งมี M41 หรือ M42",
+            "ในคำสั่งมี G80"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 31,
+          "text": "เครื่องกัด ซี เอ็น ซีมีเพลานำเลื่อนแบบใด",
+          "options": [
+            "Lead Screws",
+            "Spindle",
+            "Ball Screws",
+            "Square Thread"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 32,
+          "text": "ข้อใดคือ สัญลักษณ์จุด ศูนย์ของชิ้นงาน",
+          "options": [
+            "ดูรูปตัวเลือก ก. ในภาพประกอบ",
+            "ดูรูปตัวเลือก ข. ในภาพประกอบ",
+            "ดูรูปตัวเลือก ค. ในภาพประกอบ",
+            "ดูรูปตัวเลือก ง. ในภาพประกอบ"
+          ],
+          "answer": 3,
+          "explanation": "",
+          "sourceImage": "data:image/jpeg;base64,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"
+        },
+        {
+          "number": 33,
+          "text": "ข้อใดคือ สัญลักษณ์ จดุ อ้างอิง",
+          "options": [
+            "ดูรูปตัวเลือก ก. ในภาพประกอบ",
+            "ดูรูปตัวเลือก ข. ในภาพประกอบ",
+            "ดูรูปตัวเลือก ค. ในภาพประกอบ",
+            "ดูรูปตัวเลือก ง. ในภาพประกอบ"
+          ],
+          "answer": 1,
+          "explanation": "",
+          "sourceImage": "data:image/jpeg;base64,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"
+        },
+        {
+          "number": 34,
+          "text": "การหล่อลื่นเครื่องจักร ซี เอ็น ชี ควรทำเมื่อใด",
+          "options": [
+            "เมื่อเครื่องมีความฝืด",
+            "ก่อนและหลังการใช้งาน",
+            "ขณะเครื่องกำลังทำงาน",
+            "ตามคำแนะนำในหนังสือคู่มือเครื่อง"
+          ],
+          "answer": 3,
+          "explanation": ""
+        },
+        {
+          "number": 35,
+          "text": "หน่วยการวัดแบบเมตริก คือข้อใด",
+          "options": [
+            "G02",
+            "G21",
+            "G03",
+            "GO8"
+          ],
+          "answer": 1,
+          "explanation": ""
+        },
+        {
+          "number": 36,
+          "text": "เมื่อเปิดเครื่องจักรกล ซี เอ็น ซี ก่อนทำงานทุกครั้งจะต้องทำอะไรก่อน",
+          "options": [
+            "ทำการหล่อลื่นส่วนต่างๆ ของเครื่องจักร",
+            "ทำการเซ็ตเครื่องเข้าสู่ Mode Home หรือ Reference",
+            "กำหนดจุดศูนย์ของชิ้นงาน",
+            "เข้าสู่ Mode Automatic"
+          ],
+          "answer": 1,
+          "explanation": ""
+        },
+        {
+          "number": 37,
+          "text": "ข้อใดต่อไปนี้ไม่ใช่ข้อมูลในการปรับตั้งเครื่องมือตัด",
+          "options": [
+            "รูปทรงและขนาดของด้ามยึดเครื่องมือ",
+            "ตำแหน่งของชิ้นงาน",
+            "ขนาดของวัตถุดิบที่ถูกต้อง",
+            "รายละเอียดเครื่องมือ Standard Tool Bar มีคำสั่งที่เป็นเครื่องมือมาตรฐาน คือ ส่วนประกอบของโปรแกรม CNC Simulation มี 6 ส่วน คือ"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 38,
+          "text": "ถ้า Key ข้อมูลและทดลอง Dry Run ข้อมูล ในโปรแกรมเกรมผิดพลาดต้องแก้ไขตามขั้นตอนอย่างไร",
+          "options": [
+            "กด Mode, Reference",
+            "กด Mode, Data in – out",
+            "กด Mode, Edit",
+            "กด Automatic, Jog"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 39,
+          "text": "ในโรงงานอุตสาหกรรมการผลิตขนาดใหญจ่ ะใช้เครื่องมือใด วัดตรวจสอบขนาดชิ้นงาน",
+          "options": [
+            "เครื่องวัดขนาด เอ็น ซี แบบ 2 แกน",
+            "Micrometer",
+            "เครื่องวัดขนาด เอ็น ซี แบบ 3 แกน",
+            "Dial Indicator"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 40,
+          "text": "อุปกรณ์ใดที่ทำให้เกิดการเคลื่อนที่ของแท่นเลื่อนต่าง ๆ ในเครื่องกลึงซีเอ็นซี",
+          "options": [
+            "หม้อแปลง",
+            "ตัวแปลงสัญญาณ",
+            "มอเตอร์ขับ",
+            "คอนโทรเลอร์"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 41,
+          "text": "มีดอินเสิร์ท (Insert) พร้อมด้ามที่ใช้ในงานตัดเฉือนบนเครื่องกลึงซีเอ็นซี ต้องจับยึดเข้ากับส่วน ใดของเครื่อง",
+          "options": [
+            "จับยึดกับหัวจับ",
+            "จับยึดกับป้อมมีด",
+            "จับยึดกับ Auto Tool",
+            "จับยึดกับ Tool Magazine"
+          ],
+          "answer": 3,
+          "explanation": ""
+        },
+        {
+          "number": 42,
+          "text": "หน่วยการวัดแบบนิ้ว คือข้อใด",
+          "options": [
+            "G02",
+            "G21",
+            "G03",
+            "G20"
+          ],
+          "answer": 3,
+          "explanation": ""
+        },
+        {
+          "number": 43,
+          "text": "เครื่องมือตัด ที่ใช้บนเครื่องกัดซีเอ็นซีจะถูกจัดเก็บไว้ที่ส่วนใดของเครื่อง",
+          "options": [
+            "Tool Holder",
+            "Tool Set-up",
+            "Tool Magazine",
+            "Tool Storage"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 44,
+          "text": "จากกฎมือขวา นิ้วหัวแม่มือ ใช้แทนแกนใดในเครื่องกัดซีเอ็นซี",
+          "options": [
+            "X",
+            "Z",
+            "Y",
+            "W"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 45,
+          "text": "คำสั่ง M30 ที่ใช้ในงานกัดซีเอ็นซี หมายถึง",
+          "options": [
+            "เพลากัดหยุดหมุน",
+            "สิ้นสุดการใช้โปรแกรมย่อย",
+            "สิ้นสุดโปรแกรมและกลับมาเริ่มต้นใหม่",
+            "เพลากัดหยุดหมุน"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 46,
+          "text": "การเลือกใช้อุปกรณ์จับยึดชื้นงานบนเครื่องกัดซีเอ็นซี พิจารณาจากข้อใด",
+          "options": [
+            "แบบงานกำหนด",
+            "จำนวนการผลิต",
+            "ระยะเวลาผลิต",
+            "รูปร่าง ลักษณะงานที่ผลิต"
+          ],
+          "answer": 3,
+          "explanation": ""
+        },
+        {
+          "number": 47,
+          "text": "ข้อใดเป็นอุปกรณ์จับยึดเครื่องมือตัด ที่ใช้บนเครื่องกัดซีเอ็นซี",
+          "options": [
+            "Tool Holder",
+            "Step Block",
+            "หัวจับ",
+            "Cam Clamp"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 48,
+          "text": "การเคลื่อนที่แบบ INCREMENTAL ใช้คำสั่งใด",
+          "options": [
+            "G90",
+            "G96",
+            "G91",
+            "G97"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 49,
+          "text": "การเคลื่อนที่แบบ Absolute ใช้คำสั่งใด",
+          "options": [
+            "G90",
+            "G96",
+            "G91",
+            "G97"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 50,
+          "text": "ข้อใดเป็นเหตุผลหลักในการใช้ G96",
+          "options": [
+            "เพื่อรักษาคมตัดมีดให้ได้อายุใช้งานที่เหมาะสม",
+            "คำสั่งในการกำหนดค่าความเร็วตัด",
+            "เพิ่มประสิทธิภาพในการทำงาน",
+            "เพื่อลดอุณหภูมิของมีดตัด"
+          ],
+          "answer": 1,
+          "explanation": ""
+        },
+        {
+          "number": 51,
+          "text": "ข้อใดคือคำสั่ง กลึงเกลียว",
+          "options": [
+            "G 30",
+            "G 32",
+            "G 31",
+            "G 33"
+          ],
+          "answer": 1,
+          "explanation": ""
+        },
+        {
+          "number": 52,
+          "text": "การนำข้อมูลจากภายนอก ป้อนเข้าระบบ CNC จะป้อนผ่านส่วนประกอบใด",
+          "options": [
+            "DATA ENTRY",
+            "DATA CONTROL",
+            "DATA OUTPUT",
+            "DATA PROCESSING"
+          ],
+          "answer": 1,
+          "explanation": ""
+        },
+        {
+          "number": 53,
+          "text": "รหัสคำสั่ง M04 หมายถึงข้อใด",
+          "options": [
+            "สิ้นสุดโปรแกรม",
+            "เพลางานหมุนทวนเข็ม",
+            "เพลางานหมุนตามเข็ม",
+            "เพลางานหยุดหมุน"
+          ],
+          "answer": 1,
+          "explanation": ""
+        },
+        {
+          "number": 54,
+          "text": "รหัสคำสั่ง M05 หมายถึงข้อใด",
+          "options": [
+            "สิ้นสุดโปรแกรม",
+            "เพลางานหมุนทวนเข็ม",
+            "เพลางานหมุนตามเข็ม",
+            "เพลางานหยุดหมุด"
+          ],
+          "answer": 3,
+          "explanation": ""
+        },
+        {
+          "number": 55,
+          "text": "คำสั่ง CYCLE สำหรับการเจาะรูลึก โดยมีการคายเศษ (Chip) คือ",
+          "options": [
+            "G82",
+            "G84",
+            "G83",
+            "G80"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 56,
+          "text": "ข้อใดเป็นโค้ดคำสั่งทางเรขาคณิต",
+          "options": [
+            "G , X , Z , R",
+            "P , Q , N",
+            "M , S , V",
+            "F , T , U"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 57,
+          "text": "ข้อใดเป็นโค้ดคำสั่งทางเทคนิค",
+          "options": [
+            "N , G",
+            "G , R",
+            "F , S",
+            "M , N"
+          ],
+          "answer": 2,
+          "explanation": ""
+        },
+        {
+          "number": 58,
+          "text": "M-Code มีหน้าที่อย่างไร",
+          "options": [
+            "ควบคุมการทำงานของโปรแกรม",
+            "ควบคุมคำสั่งทางเทคนิค",
+            "ควบคุมการเคลื่อนที่ตัดเฉือน",
+            "ควบคุมการทำงานของอุปกรณ์เครื่องจักร"
+          ],
+          "answer": 3,
+          "explanation": ""
+        },
+        {
+          "number": 59,
+          "text": "G Code คืออะไร",
+          "options": [
+            "โค้ดคำสั่งควบคุมโปรแกรม",
+            "โค้ดคำสั่งทางเรขาคณิต",
+            "โค้ดคำสั่งทางเทคนิค",
+            "โค้ดคำสั่งเรียกคำสั่งย่อย"
+          ],
+          "answer": 1,
+          "explanation": ""
+        },
+        {
+          "number": 60,
+          "text": "เครื่องจักรเกิดความเสียหายกะทันหัน เนื่องจากสาเหตุมากที่สุด",
+          "options": [
+            "ชิ้นส่วนหมดอายุการใช้งาน",
+            "การเกิดสนิม",
+            "ความสกปรกของเครื่องจักร",
+            "การแตกหักของชิ้นส่วน"
+          ],
+          "answer": 3,
+          "explanation": ""
+        },
+        {
+          "number": 61,
+          "text": "สภาวะอุณหภูมิที่เหมาะสมสำหรับเครื่องจักรกล CNC คือ",
+          "options": [
+            "10 –15 *C",
+            "50 – 100 *C",
+            "10 – 59 *C",
+            "55 – 95 *C"
+          ],
+          "answer": 0,
+          "explanation": ""
+        },
+        {
+          "number": 62,
+          "text": "สิ่งต้องปฏิบัติทุกครั้งหลังทำงานเสร็จ",
+          "options": [
+            "เก็บเศษกลึงออกทุกครั้ง",
+            "ชโลมน้ำมันหลังทำความสะอาดเสร็จ",
+            "หลังเก็บเศษเช็ดด้วยผ้าแห้ง",
+            "ถูกทุกข้อ คำสั่ง G Code ที่ใช้ในงานกัด รหัสคำสั่ง ความหมาย/การทำงาน G00 การเคลื่อนที่เร็ว G01 การเคลื่อนที่ในแนวเส้นตรงโดยมีอัตราป้อน G02 การเคลื่อนที่ในแนวเส้น โค้ง ทิศทางตามเข็มนาฬิกา G03 การเคลื่อนที่ในแนวเส้นโค้ง ทิศทวนเข็มนาฬิกา G17 เลือกระนาบในการทำงาน XY G18 เลือกระนาบในการทำงาน XZ G19 เลือกระนาบในการทำงาน ZY G20 ป้อนข้อมูลที่มีหน่วยเป็นนิ้ว G21 ป้อนข้อมูลที่มีหน่วยเป็นมิลลิเมตร G28 การเลื่อนกลับไปยังจุดอ้างอิง G40 ยกเลิกการชดเชยขนาดรัศมีของเครื่องมือตัด G41 การชดเชยขนาดรัศมีของเครื่องมือตัดทางด้านซ้าย G42 การชดเชยขนาดรัศมีของเครื่องมือตัดทางด้านขวา G43 การชดเชยขนาดความยาวของเครื่องมือตัด (ค่าบวก) G44 การชดเชยขนาดความยาวของเครื่องมือตัด (ค่าลบ) G49 ยกเลิกการชดเชยขนาดความยาวของเครื่องมือตัด G54 ปรับตั้งโคออร์ดิเนตของขึ้นงาน G70 ป้อนข้อมูลที่มีหน่วยเป็นนิ้ว G71 ป้อนข้อมูลที่มีหน่วยเป็นมิลลิเมตร G80 ยกเลิกการทำวัฎจักร (Cycle) G81 วัฏจักรการเจาะรู G83 วัฏจักรการเจาะรูลึก G84 ยกเลิกการต๊าปเกลียว G85 วัฏจักรการคว้านรู G90 การวัดขนาดแบบสัมบูรณ์ G91 การวัดขนาดแบบต่อเนื่อง G92 เปลี่ยนโคออร์ดิเนตของชิ้นงาน G99 วัฏจักรของการเลื่อนกลับไปยังจุดอ้างอิง คำสั่ง G Code ที่ใช้ในงานกลึง รหัสคำสั่ง ความหมาย/การทำงาน G00 การเคลื่อนที่เร็ว G01 การเคลื่อนที่ในแนวเส้นตรงโดยมีอัตราป้อน G02 การเคลื่อนที่ในแนวเส้นโค้ง ทิศทางตามเข็มนาฬิกา G03 การเคลื่อนที่ในแนวเส้นโค้ง ทิศทวนเข็มนาฬิกา G04 การหยุดนิ่งชั่วขณะ G20 ป้อนข้อมูลที่มีหน่วยเป็นนิ้ว G21 ป้อนข้อมูลที่มีหน่วยเป็นมิลลิเมตร G27 การตรวจการเลื่อนกลับไปยังจุดอ้างอิง G28 การเถื่อนกลับไปยังจุดอ้างอิง G30 การเลื่อนกลับไปขังจุดอ้างอิงที่ 2, 3 และ 4 G32 การตัดเกลียว G34 การตัดเกลียวหลายปาก G40 ยกเลิกการชดเชยขนาดรัศมีของเครื่องมือตัด G41 การชดเชยขนาดรัศมีของเครื่องมือตัดทางด้านซ้าย G42 การชดเชยขนาดรัศมีของเครื่องมือตัดทางด้านขวา G50 การปรับตั้งระบบโคออร์ดิเนต หรือ การปรับตั้งความเร็วรอบสูงสุด G65 การเรียกโปรแกรมมาโคร G70 วัฏจักรการกลึงละเอียด G71 วัฏจักรการกลึงปอก G72 วัฏจักรการกลึงปาดหน้า G73 วัฏจักรกากลึงปอกตามเส้นขอบรูป G74 การเจาะลึกตามแนวแกน Z G75 การเจาะลึกตามแนวแกน X G76 วัฏจักรการตัดเกลียวผสม G90 วัฏจักรการตัดตามขนาดเส้นผ่านศูนย์กลาง G92 วัฏจักรการตัดเกลียว G94 วัฏจักรการกลึงปาดหน้า G96 การควบคุมความเร็วคงที่ G97 ยกเลิกการควบคุมความเร็วคงที่ G98 อัตราป้อน/นาที G99 อัตราป้อน/รอบ คำสั่ง M Code รหัสคำสั่ง ความหมาย/การทำงาน M00 Program Stop หยุดการทำงานของโปรแกรม M01 Optional Program Stop หยุดการทำงานของเครื่องจักร M02 End-of-Program จบการทำงานโปรแกรม M03 Spindle Start Forward หัวหมุนตามเข็มนาฬิกา M04 Spindle Start Reverse หัวหมุนทวนเข็มนาฬิกา M05 Spindle Stop หัวหยุดหมุน M06 Run Tool Change Cycle , เปลี่ยนทูลM6 Txx M07 Thru Spindle M08 Coolant ON- Flood Coolant เปิดน้ำหล่อเย็น M09 Coolant OFF ปิดน้ำหล่อเยน็ M11 Set Tool Carousel position to 1(ATCTol Changer ONLY) M19 cycle positioning(Not for spindle orientation) หัวอยู่ในตำแหน่งเปลี่ยนทูล M20 Does nothing Standard. M22 Chip Conveyor Toggle ON/OFF option M29 Rigid Tap M29 Sxxxx in block prior to G84 M30 End-of-Program จบการทำงานโปรแกรม M41 Low Gear Select M42 High Gear Select M48 100%Spindle Speed Override Forced M49 Released M60 A Axis Brake ON M61 A Axis Brake OFF M62 B Axis Brake ON M63 Axis Brake OFF M64 M64/65 Output ON M65 M64/65 Output OFF M66 M66/67 Output ON, Chip Conveyor ON M67 M66/67 Output OFF, Chip Conveyor ON M68 M68/69 Output ON, Wash Down ON M69 M68/69 Output OFF, Wash Down OFF M78 M78/79 Output ON, Cooled spindle ON(2016 &3016L) M79 M78/79 Output OFF, Cooled spindle OFF(2016 &3016L) M80 MIDACO Pallet Changer 2 When the machine has MIDACO pallet option M85 A Axis Rotary Table Enable M86 A Axis Rotary Table Disable M87 B Axis Rotary Table Enable M88 Axis Rotary Table Disable M98 Sub-Program Call เรียก sub โปรแกรม M99 Sub Program End จบ sub โปรแกรม"
+          ],
+          "answer": 3,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}
